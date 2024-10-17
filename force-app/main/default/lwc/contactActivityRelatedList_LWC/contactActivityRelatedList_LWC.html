@@ -1,0 +1,13 @@
+<template>
+    <article class="slds-card slds-card_boundary">
+    <div class="related-list-custom">
+        <lightning-card title={activityRelatedListTitle} icon-name="custom:custom89" class="custom_header">
+            <div class="slds-border_top">
+                <lightning-datatable key-field="Id" data={listOfActivities} default-sort-direction="asc" sorted-by="ActivityDate" columns={columns} hide-checkbox-column="true">
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+    </div>
+    </article>
+</template>
+

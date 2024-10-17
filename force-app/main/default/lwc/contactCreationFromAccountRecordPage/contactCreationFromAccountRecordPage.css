@@ -1,0 +1,10 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* This centers the button horizontally */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.input-container{
+    padding-left: 15px;
+    padding-right: 15px;
+}

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="Create a Contact for this Account">
+        <div class="input-container">
+            <lightning-input value={firstName} label="First Name" onchange={updateFirstName}></lightning-input>
+            <lightning-input value={lastName} label="Last Name" onchange={updateLastName}></lightning-input>
+            <lightning-input value={phoneNumber} label="Phone Number" onchange={updatePhoneNumber}></lightning-input>
+        </div>
+        <div class="button-container">
+            <lightning-button label="Create Account" onclick={createContactRecord}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

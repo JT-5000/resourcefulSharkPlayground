@@ -1,0 +1,10 @@
+<template> 
+    <lightning-card title="Create an Account">
+        <div>
+            <h1>{businessName}</h1>
+            <lightning-input value={businessName} label="Business Name" onchange={handleInputChange}></lightning-input>
+            <lightning-input value={webAddress} label="Web Address" onchange={handleWebAddressChange}></lightning-input>
+            <lightning-button label="Create Account Record" onclick={handleAccountCreation}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

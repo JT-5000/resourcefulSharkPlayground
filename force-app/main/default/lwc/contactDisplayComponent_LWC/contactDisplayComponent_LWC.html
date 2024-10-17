@@ -1,0 +1,25 @@
+<template>
+    <div>
+        <!--Here we're using conditional rendoring so we don't say something like, "This Account currently has 1 Contacs."-->
+        <template if:true={returnTruthyOrFalsy}>
+            <lightning-card>
+                <p class="p-tag">This Account currently has {totalContactRecordCount} related Contact!</p>
+            </lightning-card>
+        </template>
+        <template if:false={returnTruthyOrFalsy}>
+            <lightning-card>
+                <p class="p-tag">This Account currently has {totalContactRecordCount} related Contacts!</p>
+            </lightning-card>
+        </template>
+    </div>
+    <article class="slds-card slds-card_boundary">
+        <div class="contact-list-wrapper">
+            <lightning-card title={activityRelatedListTitle} icon-name="custom:custom89" class="custom_header">
+                <div class="slds-border_top">
+                    <lightning-datatable key-field="Id" data={listOfContactRecords} default-sort-direction="asc" sorted-by="LastName" columns={columns} hide-checkbox-column="true">
+                    </lightning-datatable>
+                </div>
+            </lightning-card>
+        </div>
+        </article>
+</template>
